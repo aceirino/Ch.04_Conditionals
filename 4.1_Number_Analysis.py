@@ -8,22 +8,29 @@ Create a program that asks the user for a number and then analyzes it to determi
 
 A small report will then be printed. Use the following to test your program:
 
-In: 32  
+In: 32
 Out:  Test 1: Even
       Test 2: Positive
       Test 3: Inclusive
 
-In: -123  
+In: -123
 Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
-number=int(input("choose a number: "))
-if number >100:
-    print("exclusive")
-if number <-100:
-    print("exclusive")
-if number <100:
-    print("inclusive")
-if number >-100:
-    print("inclusive")
+number = int(input("choose a number: "))
+if number > 100 or number < -100:
+    print("Test 3: exclusive")
+else:
+    print("Test 3: inclusive")
+
+if number%2==0:
+    print("Test 1: even")
+else:
+    print("Test 1: odd")
+if number>0:
+    print("Test 2: positive")
+elif number<0:
+    print("Test 2: negative")
+else:
+    print("Test 2: zero")
