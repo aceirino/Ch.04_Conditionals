@@ -11,8 +11,11 @@ but I will definitely not ask another person except the instructor. Signed: ____
      else:
          print("Jedi, you will never be.")
 '''
-     
-     
+midichlorians=float(input("Enter midichlorian count: "))
+if midichlorians>10000:
+    print("You have serious Jedi potential")
+else:
+    print("Jedi, you will never be.")
      
 '''
   2. This runs, but there is something wrong. What is it?
@@ -25,8 +28,13 @@ but I will definitely not ask another person except the instructor. Signed: ____
      else:
          print("Incorrect.")
 '''
-
-
+print("A. Droid")
+print("B. Storm Trooper")
+user_input=input("R2D2 is a: ")
+if user_input.upper()=="A":
+    print("Correct!")
+else:
+    print("Incorrect.")
 
 '''
      
@@ -41,7 +49,11 @@ but I will definitely not ask another person except the instructor. Signed: ____
      else:
          print("x is not positive.")
  '''
- 
+x=4
+if x>0:
+    print("x is positive.")
+else:
+    print("x is not positive.")
  
  
  '''
