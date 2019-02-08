@@ -63,7 +63,9 @@ else:
      if x = 3
          print("You entered 3")
  '''
- 
+x=input("Enter a number: ")
+if x ==3:
+    print("You entered 3")
  
  '''
   5. There are four things wrong with this code. Identify all four issues. 
@@ -74,7 +76,11 @@ else:
          else
          print("Incorrect! It is BB8.")
 '''
-
+answer=input("What is the name of Poe Dameron's Droid? ")
+if answer=="BB8":
+    print("Correct!")
+else:
+    print("Incorrect! It is BB8.")
 
 
 '''
@@ -84,7 +90,9 @@ else:
      if x == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":
          print("That is correct!")
 '''
-
+x=input("Who are the top 3 greatest Jedi?")
+if x=="Yoda" or x=="Luke Skywalker" or x=="Obi-Wan Kenobi":
+    print("That is correct!")
 
 
 '''
@@ -103,8 +111,8 @@ else:
      if z:
          print("Star Wars Episodes 4,5,6 are the best!")
 '''
-
-
+it will print y
+it actually printed z
 
 
 '''
@@ -114,21 +122,32 @@ else:
      x = 5
      y = 10
      z = 10
-     print(x < y)
-     print(y < z)
-     print(x == 5)
-     print(not x == 5)
-     print(x != 5)
-     print(not x != 5)
-     print(x == "5")
-     print(5 == x + 0.00000000001)
-     print(x == 5 and y == 10)
-     print(x == 5 and y == 5)
-     print(x == 5 or y == 5)
+     print(x < y)#true
+     print(y < z)#false
+     print(x == 5)#true
+     print(not x == 5)#false
+     print(x != 5)#false
+     print(not x != 5)#true
+     print(x == "5")#true
+     print(5 == x + 0.00000000001)#true
+     print(x == 5 and y == 10)#true
+     print(x == 5 and y == 5)#false
+     print(x == 5 or y == 5)#true
 '''
-
-
-
+x = 5
+y = 10
+z = 10
+print(x < y)  # true
+print(y < z)  # false
+print(x == 5)  # true
+print(not x == 5)  # false
+print(x != 5)  # false
+print(not x != 5)  # true
+print(x == "5")  # true actually false
+print(5 == x + 0.00000000001)  # true actually false
+print(x == 5 and y == 10)  # true
+print(x == 5 and y == 5)  # false
+print(x == 5 or y == 5)  # true
 '''
  9. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (HINT: when comparing strings, ASCII codes are used. https://www.ascii-code.com/)
@@ -143,7 +162,15 @@ else:
      print((2 == 2) == True)
      print("?"<"!")
 '''
-
+print("3" == "3")  # true
+print(" 3" == "3")  # syntax error
+print(3 < 4)  # false
+print("3" < "4")  # true
+print("3" < 4)  # error
+print("<" < ">")  # true
+print((2 == 2) == "True")  # true
+print((2 == 2) == True)  #true
+print("?" < "!")  #flase
 
 
 '''
@@ -166,4 +193,21 @@ else:
      else if user_input = C:
          sensitivity = 0
 '''
+print("Welcome to the Jedi Academy!")
+
+print("A. Jedi Master")
+print("B. Sith Lord")
+print("C. Droid")
+
+user_input = input("Choose a character?")
+
+if user_input.lower() == "a":
+    sensitivity = 1000
+    print("sensitivity: 1000")
+elif user_input.lower() == "b":
+    sensitivity = 900
+    print("sensitivity: 900")
+elif user_input.lower() == "c":
+    sensitivity = 0
+    print("sensitivity: 0")
 
